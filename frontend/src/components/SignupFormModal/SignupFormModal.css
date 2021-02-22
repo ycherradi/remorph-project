@@ -36,7 +36,11 @@ div.signup-form_inputDiv {
 }
 
 .already-a-member {
+  border: none;
+  background: none;
   align-self: center;
   padding-top: 20px;
   color: green;
+  font-size: 16px;
+  cursor: pointer;
 }

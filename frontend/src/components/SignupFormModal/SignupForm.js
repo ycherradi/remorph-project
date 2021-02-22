@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
 import { useDispatch } from "react-redux";
 import * as sessionActions from "../../store/session";
+import LoginForm from '../LoginFormModal/LoginForm';
+import { Modal } from '../../context/Modal';
 import './SignupFormModal.css';
 
 function SignupForm() {
   const dispatch = useDispatch();
+  const [showModal, setShowModal] = useState(false);
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
@@ -109,7 +111,12 @@ function SignupForm() {
         </div>
       </div>
       <button className="signup-btn" type="submit">Sign Up</button>
-      <Link className="already-a-member" to="">Already a Member? Log In</Link>
+      <button className="already-a-member" onClick={() => setShowModal(true)}>Already a Member? Log In</button>
+        {showModal && (
+          <Modal onClose={() => setShowModal(false)}>
+            <LoginForm />
+          </Modal>
+        )}
     </form>
   );
 }
