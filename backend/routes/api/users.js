@@ -10,11 +10,11 @@ const router = express.Router();
 
 
 const validateSignup = [
-  check('first_name')
+  check('firstname')
     .exists({ checkFalsy: true })
     .isLength({ min: 2 })
     .withMessage('Please provide a first name with at least 2 characters.'),
-  check('username')
+  check('lastname')
     .exists({ checkFalsy: true })
     .isLength({ min: 2 })
     .withMessage('Please provide a last name with at least 2 characters.'),
