@@ -20,10 +20,6 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING(255)
       },
-      account_type: {
-        allowNull: false,
-        type: Sequelize.STRING(20)
-      },
       goal_amount: {
         allowNull: false,
         type: Sequelize.INTEGER(20)

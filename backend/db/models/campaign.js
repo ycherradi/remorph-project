@@ -4,7 +4,6 @@ module.exports = (sequelize, DataTypes) => {
     title: DataTypes.STRING,
     description: DataTypes.TEXT,
     media_url: DataTypes.STRING,
-    account_type: DataTypes.STRING,
     goal_amount: DataTypes.INTEGER,
     amount_generated: DataTypes.INTEGER,
     locationId: DataTypes.INTEGER,
