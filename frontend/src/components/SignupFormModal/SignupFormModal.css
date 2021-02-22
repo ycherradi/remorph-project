@@ -1,23 +1,22 @@
-
-form.login {
+form.signup {
   display: flex;
   flex-direction: column;
   font-size: 20px;
-  padding-bottom: 20%;
+  
 }
 
-.login-error_ul {
+.signup-error_ul {
   color: red;
 }
 
-.login-message {
-  padding-left: 20%;
-  padding-bottom: 20%;
+.signup-message {
+  padding-left: 30%;
+  padding-bottom: 10%;
   font-size: 40px;
   color: green;
 }
 
-input.login-form_input {
+input.signup-form_input {
   box-sizing: border-box;
   width: 100%;
   padding: 12px 20px;
@@ -27,17 +26,16 @@ input.login-form_input {
   color: green;
 }
 
-div.login-form_inputDiv {
-    padding: 10px;
+div.signup-form_inputDiv {
     align-items: flex-end;
 }
 
-.login-btn {
+.signup-btn {
   padding: 10px;
   border-radius: 10px;
 }
 
-.not-a-member {
+.already-a-member {
   align-self: center;
   padding-top: 20px;
   color: green;
