@@ -4,20 +4,20 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert('Follows', [
       {
-        userId: '',
-        campaignId: '',
+        userId: 1,
+        campaignId: 3,
       },
       {
-        userId: '',
-        campaignId: '',
+        userId: 1,
+        campaignId: 4,
       },
       {
-        userId: '',
-        campaignId: '',
+        userId: 2,
+        campaignId: 1,
       },
       {
-        userId: '',
-        campaignId: '',
+        userId: 2,
+        campaignId: 2,
       },
     
     ], {});

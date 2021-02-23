@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     goal_amount: DataTypes.INTEGER,
     amount_generated: DataTypes.INTEGER,
     locationId: DataTypes.INTEGER,
-    duration: DataTypes.DATEONLY,
+    duration: DataTypes.STRING,
     userId: DataTypes.INTEGER,
     categoryId: DataTypes.INTEGER
   }, {});

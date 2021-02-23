@@ -3,10 +3,10 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert('Locations', [
-      {name: "United States"},
-      {name: "Canada"},
-      {name: "United Kingdom"},
-      {name: "Europe"},
+      {country: "United States"},
+      {country: "Canada"},
+      {country: "United Kingdom"},
+      {country: "Europe"},
     ], {});
   },
 

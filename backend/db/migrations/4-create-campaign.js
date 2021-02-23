@@ -35,7 +35,7 @@ module.exports = {
       },
       duration: {
         allowNull: false,
-        type: Sequelize.DATEONLY
+        type: Sequelize.STRING(25)
       },
       userId: {
         allowNull: false,
