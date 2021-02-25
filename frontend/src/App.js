@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
+import CampaignBrowser from "./components/Home";
 
 function App() {
   const dispatch = useDispatch();
@@ -16,8 +17,8 @@ function App() {
       <Navigation isLoaded={isLoaded} />
       {isLoaded && (
         <Switch>
-          <Route>
-            <h1>Page Not Found</h1>
+          <Route path='/'>
+            <CampaignBrowser />
           </Route>
         </Switch>
       )}

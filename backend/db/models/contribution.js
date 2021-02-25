@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     // associations can be defined here
     Contribution.belongsTo(models.User, { foreignKey: 'userId' });
     Contribution.belongsTo(models.Campaign, { foreignKey: 'campaignId' });
-    Contribution.hasMany(models.Reward, { foreignKey: 'rewardId' });
+    Contribution.belongsTo(models.Reward, { foreignKey: 'rewardId' });
 
   };
   return Contribution;

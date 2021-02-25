@@ -2,7 +2,7 @@
 module.exports = (sequelize, DataTypes) => {
   const Reward = sequelize.define('Reward', {
     name: DataTypes.STRING,
-    desciption: DataTypes.TEXT,
+    description: DataTypes.TEXT,
     userId: DataTypes.INTEGER,
     campaignId: DataTypes.INTEGER
   }, {});

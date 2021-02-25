@@ -1,0 +1,38 @@
+.campaign-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-style: solid;
+  border-radius: 10px;
+  width: 300px;
+  padding: 10px;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text-spacer {
+  height: 10px;
+}
+
+.title, .raised {
+  font-weight: bold ;
+}
+
+.spacer2 {
+  width: 80px;
+}
+
+.follow-btn {
+  display: flex;
+  padding: 10px;
+  justify-content: flex-end;
+}

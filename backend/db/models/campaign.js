@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
     Campaign.belongsTo(models.User, { foreignKey: 'userId' });
     Campaign.belongsTo(models.Category, { foreignKey: 'categoryId' });
     Campaign.belongsTo(models.Location, { foreignKey: 'locationId' });
-
+    Campaign.hasMany(models.Reward, { foreignKey: 'campaignId'});
   };
   return Campaign;
 };

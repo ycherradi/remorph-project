@@ -1,0 +1,53 @@
+
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  background-image: url("./homePage.png");
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+
+.campaign {
+  display: flex;
+  overflow-y: scroll;
+  justify-content: space-between;
+  
+}
+
+.spacer1 {
+  border-style: solid;
+  height: 100px;
+}
+
+.campaigns-div {
+  border-style: solid;
+  padding: 30px;
+}
+
+.campaign-comp {
+  position: fixed;
+  
+}
