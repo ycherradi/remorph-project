@@ -38,12 +38,18 @@ body { font-family: sans-serif; }
 }
 
 .spacer1 {
-  border-style: solid;
   height: 100px;
 }
 
+.spacer2 {
+  height: 30px;
+  background: none;
+  visibility: hidden;
+  display: inline-flex;
+}
+
 .campaigns-div {
-  border-style: solid;
+  overflow-y: visible;
   padding: 30px;
 }
 

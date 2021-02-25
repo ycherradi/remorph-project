@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import CampaignBrowser from "./components/Home";
+import OneCampaign from "./components/OneCampaign";
 
 function App() {
   const dispatch = useDispatch();
@@ -17,8 +18,11 @@ function App() {
       <Navigation isLoaded={isLoaded} />
       {isLoaded && (
         <Switch>
-          <Route path='/'>
+          <Route exact path='/'>
             <CampaignBrowser />
+          </Route>
+          <Route path='/campaign/:id'>
+            <OneCampaign />
           </Route>
         </Switch>
       )}

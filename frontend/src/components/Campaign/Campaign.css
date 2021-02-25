@@ -36,3 +36,13 @@
   padding: 10px;
   justify-content: flex-end;
 }
+
+.campaign-container {
+  width:300px;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.campaign-container:hover {
+  transform: scale(1.05);
+}

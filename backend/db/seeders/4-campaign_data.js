@@ -6,7 +6,7 @@ module.exports = {
       { 
         title: 'TurboHub: World’s Fastest SSD & 6-in-1 USB-C Hub',
         description: '4TB SSD + Thunderbolt 3 + USB 3.1 Gen2 + USB Gen 3.1+ HDMI 2.0 + SD UHS-II + 1000Mbps Ethernet',
-        media_url: 'https://www.youtube.com/89651f34-2a6e-42fe-b1ca-bcaf566f7e6d',
+        media_url: 'https://www.youtube.com/watch?v=ESPhhTu08m4',
         goal_amount: 1000000,
         amount_generated: 450000,
         duration: 'April 2021',
@@ -17,7 +17,7 @@ module.exports = {
       { 
         title: 'KNECT Wearable Charging Band Battery for iPhone',
         description: 'Affordable portable charging w/o bulky power banks or restrictive wall plugs to keep you tethered.',
-        media_url: 'https://www.youtube.com/741875ff-ceea-4c07-b56d-a87a0900f65d',
+        media_url: 'https://www.youtube.com/watch?v=n27r7IXuiKs',
         goal_amount: 200000,
         amount_generated: 41000,
         duration: 'July 2021',
@@ -28,7 +28,7 @@ module.exports = {
       { 
         title: 'Mako - The Stylish 4K Touch-Screen Monitor',
         description: 'Tap into a New World of Compatibility & Creativity - Your Everyday Office Assistant & Entertainment',
-        media_url: 'https://www.youtube.com/a92ccc40-c959-4cae-8d74-591033bf55bc',
+        media_url: 'https://www.youtube.com/watch?v=Ejq5xa4gyS0',
         goal_amount: 1000000,
         amount_generated: 312000,
         duration: 'December 2021',

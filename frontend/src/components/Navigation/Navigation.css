@@ -13,9 +13,10 @@
   line-height: 1.5;
   letter-spacing: 0;
   color: white;
+  background:white;
   text-align: left;
   padding: 10px;
-  position: fixed; /* Set the navbar to fixed position */
+  /* position: fixed; Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
 }
@@ -29,7 +30,7 @@
   top: 20px;
   position: absolute;
   border-left: 1px solid #ddd;
-  height: 50%;
+  height: 5%;
   content: "";
 }
 
@@ -42,7 +43,7 @@
   line-height: 1.5;
   letter-spacing: 0; 
   cursor: pointer;
-  color: white;
+  color: black;
 }
 
 .navbar-right > button:hover,
@@ -89,7 +90,7 @@
   background-color: none;
   padding-top: 12px;
   padding-left: 30px;
-  color: white;
+  color: black;
 }
 
 .dropdown:hover {
