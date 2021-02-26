@@ -44,24 +44,6 @@ const CampaignBrowser = () => {
         </div>
         <div className="spacer2">
         </div>
-        <div className='campaign'>
-          {Object.values(campaigns).map((campaign) => {
-            return <Campaign className='campaign-comp' key={campaign.id} data={campaign}/>
-          })}
-        </div>
-        <div className="spacer2"></div>
-        <div className='campaign'>
-          {Object.values(campaigns).map((campaign) => {
-            return <Campaign className='campaign-comp' key={campaign.id} data={campaign}/>
-          })}
-        </div>
-        <div className="spacer2"></div>
-        <div className='campaign'>
-          {Object.values(campaigns).map((campaign) => {
-            return <Campaign className='campaign-comp' key={campaign.id} data={campaign}/>
-          })}
-        </div>
-
       </div>
     </div>
   );

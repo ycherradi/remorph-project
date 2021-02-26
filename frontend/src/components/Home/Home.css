@@ -1,18 +1,25 @@
 
 
-* { box-sizing: border-box; }
+* { 
+  box-sizing: border-box; 
+  background: whitesmoke;
+}
 
 body { font-family: sans-serif; }
 
 .gallery {
-  background: #EEE;
+  background-color: white;
+}
+
+.flickity-button-icon {
+  background: transparent;
 }
 
 .gallery-cell {
   width: 66%;
   height: 200px;
   margin-right: 10px;
-  background: #8C8;
+  background-color: #8C8;
   border-radius: 5px;
   counter-increment: gallery-cell;
   background-image: url("./homePage.png");
@@ -32,10 +39,11 @@ body { font-family: sans-serif; }
 
 .campaign {
   display: flex;
-  overflow-y: scroll;
-  justify-content: space-between;
-  
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 60px;
 }
+
 
 .spacer1 {
   height: 100px;
@@ -49,11 +57,10 @@ body { font-family: sans-serif; }
 }
 
 .campaigns-div {
+  display: flex;
   overflow-y: visible;
-  padding: 30px;
-}
-
-.campaign-comp {
-  position: fixed;
-  
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
 }

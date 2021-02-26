@@ -1,23 +1,28 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
-import Flickity from 'react-flickity-component';
+import { useParams, useHistory } from 'react-router-dom';
 import ReactPlayer from "react-player";
 import './OneCampaign.css';
-import { getCampaign } from '../../store/campaign';
+import { getCampaign, deleteCampaign } from '../../store/campaign';
 
 const OneCampaign = () => {
-  const flickityOptions = {
-    freeScroll: true,
-    wrapAround: true,
-  }
   const dispatch = useDispatch();
+  const history = useHistory();
   const { id } = useParams();
   const campaign = useSelector(state => state.campaign[id]);
+  const user = useSelector(state => state.session.user);
   useEffect(() => {
     dispatch(getCampaign());
     
   }, [dispatch]);
+
+const handleDelete = (e) => {
+    e.preventDefault();
+    dispatch(deleteCampaign(campaign));
+    return history.push('/');
+    
+  }
+
 
 
   return (
@@ -45,6 +50,7 @@ const OneCampaign = () => {
           <div className='follow-btn-onecampaign'>
             <button>Follow</button>
             <button>Contribute</button>
+            {campaign?.userId === user?.id ? <button onClick={handleDelete}>Delete</button> : ''}
         </div>
         </div>
       </div>

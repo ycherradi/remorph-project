@@ -12,7 +12,6 @@
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0;
-  color: white;
   background:white;
   text-align: left;
   padding: 10px;
@@ -24,6 +23,7 @@
 .navbar-right {
   padding: 10px;
   justify-content: space-around;
+  background-color: white;
 }
 
 .navbar-right > div {
@@ -44,6 +44,7 @@
   letter-spacing: 0; 
   cursor: pointer;
   color: black;
+  background: white;
 }
 
 .navbar-right > button:hover,
@@ -63,6 +64,7 @@
   color: rgb(8, 160, 8);
   font-weight: 900;
   text-decoration: none;
+  background-color: white;
 }
 
 .navbar-left_navlink {
@@ -75,6 +77,7 @@
   color: rgb(8, 160, 8);
   font-weight: 900;
   text-decoration: none;
+  background-color: white;
 }
 
 
@@ -91,6 +94,7 @@
   padding-top: 12px;
   padding-left: 30px;
   color: black;
+  background-color: white;
 }
 
 .dropdown:hover {
@@ -118,6 +122,7 @@
 
 .search-div {
   padding-left: 30px;
+  background-color: white;
 }
 
 .search::-webkit-input-placeholder { 

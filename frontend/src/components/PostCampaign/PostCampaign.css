@@ -1,0 +1,56 @@
+.campaign-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.campaign-message {
+  font-size: 40px;
+  padding: 20px;
+  color: green;
+}
+
+.campaign-form_div {
+  box-sizing: border-box;
+  width: 50%;
+  border-radius: 20px;
+  font-size: 20px;
+  color: green;
+  background-color: white;
+}
+
+.campaign-form_inputDiv {
+  background: white;
+  padding: 40px;
+}
+
+.campaign-form_input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.campaign-form_input:focus {
+  border-color: red;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+label {
+  background: white;
+
+}
+
+.campaign-btn {
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-size: 20px;
+  color: green;
+  background-color: white;
+  padding: 10px;
+}

@@ -1,0 +1,34 @@
+.footer__section {
+  background-color: white;
+  display: block;
+  border-top: 1px solid #d3d3d3;
+  height: 50px;
+  width: 100%;
+}
+
+.footer__section ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  list-style-type: none;
+  background-color: white;
+}
+
+ul, li {
+  background-color: white;
+}
+
+.footer__link a {
+  background-color: white;
+  text-decoration: none;
+  color: green;
+}
+
+.footer__link a:visited {
+  color: green;
+}
+
+.footer__link a:hover {
+  color: rgb(15, 190, 15);
+  text-decoration: underline;
+}

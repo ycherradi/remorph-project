@@ -2,10 +2,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border-style: solid;
+  border: solid 1px;
   border-radius: 10px;
   width: 300px;
   padding: 10px;
+  background: white;
+}
+
+.campaign-div > div {
+  background: white;
 }
 
 .player-wrapper {
@@ -37,12 +42,11 @@
   justify-content: flex-end;
 }
 
-.campaign-container {
-  width:300px;
-  cursor: pointer;
-  transition: transform 1s;
-}
 
-.campaign-container:hover {
+
+.campaign-div:hover, .campaign-div:hover > div {
   transform: scale(1.05);
+  background:black;
+  cursor: pointer;
+  color: white;
 }

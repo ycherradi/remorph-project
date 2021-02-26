@@ -1,18 +1,18 @@
-import React, { useCallback } from 'react'
+import React from 'react'
 import { useHistory } from 'react-router-dom'
 import ReactPlayer from "react-player";
 import './Campaign.css';
 
 const Campaign = ({data}) => {
   const history = useHistory()
-  const onClick = useCallback(() => {
+  const onClick = () => {
         const to = `/campaign/${data?.id}`;
         history.push(to)
-    },[history])
+    }
 
   return (
-    <div className="campaign-container" onClick={onClick}>
-      <div className='campaign-div'>
+    <div>
+      <div className='campaign-div' onClick={onClick}>
         <div className='player-wrapper'>
           <ReactPlayer
           className="react-player"

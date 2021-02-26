@@ -7,6 +7,7 @@ const asyncHandler = require('express-async-handler');
 
 
 router.get('/', asyncHandler(async(req, res) => {
+    const location = await Location.findAll();
     const category = await Category.findAll();
     const campaign = await Campaign.findAll({
       include: [Category, Location, 
@@ -18,8 +19,35 @@ router.get('/', asyncHandler(async(req, res) => {
     });
   
 
-    res.json({campaign, category});
+    res.json({campaign, category, location});
 })),
+
+router.post('/', asyncHandler(async(req, res) => {
+    const { title, 
+      description, 
+      media_url, 
+      categoryId, 
+      locationId, 
+      goal_amount, 
+      amount_generated, 
+      duration, userId } = req.body;
+
+      const campaign = await Campaign.create({
+        title, 
+        description, 
+        media_url, 
+        categoryId, 
+        locationId, 
+        goal_amount, 
+        amount_generated, 
+        duration,
+        userId
+      })
+  
+
+    res.json({campaign});
+})),
+
 
 
 
