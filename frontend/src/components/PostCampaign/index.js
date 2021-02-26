@@ -20,6 +20,7 @@ function PostCampaign() {
   const [amount_generated, setAmount_generated] = useState("");
   const [duration, setDuration] = useState("");
   const user = useSelector(state => state.session.user);
+
   const Category = categories?.find((el) => { 
     if (category !== '') return el.name === category
     else return el.name === categories[0].name});
@@ -36,18 +37,18 @@ function PostCampaign() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    history.push('/');
-    console.log(category, location)
-    return dispatch(campaignActions.createCampaign({
-        title, 
-        description, 
-        media_url, 
-        categoryId: Category?.id, 
-        locationId: Location?.id, 
-        goal_amount, 
-        amount_generated, 
-        duration,
-        userId: user.id }))
+    dispatch(campaignActions.createCampaign({
+      title, 
+      description, 
+      media_url, 
+      categoryId: Category?.id, 
+      locationId: Location?.id, 
+      goal_amount, 
+      amount_generated, 
+      duration,
+      userId: user.id }));
+
+      return history.push('/');
   }
 
 

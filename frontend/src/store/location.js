@@ -24,7 +24,6 @@ const locationReducer = (state = [], action) => {
       const allLocation = action.list.location;
       return [
         ...allLocation,
-        ...state,
       ];
     }
     default:

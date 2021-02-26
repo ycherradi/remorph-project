@@ -25,7 +25,6 @@ const categoryReducer = (state = [], action) => {
       const allCategory = action.list.category;
       return [
         ...allCategory,
-        ...state,
       ];
     }
     default:

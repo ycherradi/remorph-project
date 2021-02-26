@@ -20,7 +20,6 @@ const handleDelete = (e) => {
     e.preventDefault();
     dispatch(deleteCampaign(campaign));
     return history.push('/');
-    
   }
 
 
