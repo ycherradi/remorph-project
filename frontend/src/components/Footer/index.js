@@ -6,7 +6,7 @@ const Footer = ({ isLoaded }) => {
     <div className='footer'>
       <div className='page-width'>
         {isLoaded && (
-          <>
+          <div className='footer__section-div'>
             <div className='footer__section'>
               <ul>
                 <li className='footer__link'>
@@ -24,7 +24,7 @@ const Footer = ({ isLoaded }) => {
                 </li>
               </ul>
             </div>
-          </>
+          </div>
         )}
       </div>
     </div>

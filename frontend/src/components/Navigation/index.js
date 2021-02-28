@@ -10,7 +10,7 @@ import './Navigation.css';
 
 function Navigation({ isLoaded }){
   const sessionUser = useSelector(state => state.session.user);
-
+  const categories = useSelector(state => state.category);
   let sessionLinks;
   if (sessionUser) {
     sessionLinks = (
@@ -37,7 +37,10 @@ function Navigation({ isLoaded }){
         </div>
         <div className="dropdown">Explore ⧨
           <div className="dropdown-content">
-            <Link to="#">Link 1</Link>
+            {categories.map((category) => {
+              return <Link key={category.id} to="/">{category.name}</Link>;
+            })}
+            
           </div>
         </div>
         <div className="search-div">

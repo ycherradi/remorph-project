@@ -6,7 +6,9 @@ import Navigation from "./components/Navigation";
 import CampaignBrowser from "./components/Home";
 import OneCampaign from "./components/OneCampaign";
 import PostCampaign from "./components/PostCampaign";
-import Footer from "./components/Footer";
+import Footer from './components/Footer';
+import Profile from './components/Profile';
+import ProfileProfile from './components/Profile/Profile-Profile';
 
 function App() {
   const dispatch = useDispatch();
@@ -29,9 +31,19 @@ function App() {
           <Route path='/post'>
             <PostCampaign />
           </Route>
+          <Route exact path='/profile' >
+            <Profile />
+            <ProfileProfile />
+          </Route>
+          <Route path='/profile/campaign' >
+            <Profile />
+          </Route>
+          <Route path='/profile/contribution' >
+            <Profile />
+          </Route>
         </Switch> 
       )}
-      <Footer isLoaded={isLoaded}/>
+      <Footer isLoaded={isLoaded} />
     </>
   );
 }
