@@ -16,7 +16,7 @@ const OneCampaign = () => {
   const userId =user?.id;
   const follows = useSelector(state => state.follow);
   const following = follows.filter((el) => {
-    return user.id === el.userId
+    return user?.id === el.userId
   })
 
   const followed = following.find((el) => {

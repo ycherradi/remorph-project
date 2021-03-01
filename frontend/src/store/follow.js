@@ -9,8 +9,6 @@ const load = list => ({
   list,
 });
 
-// Create follow not working but route works
-
 export const createFollow = (campaignId, userId) => async dispatch => {
   await csrfFetch(`/api/follow`, {
     method: 'post',
@@ -22,18 +20,6 @@ export const createFollow = (campaignId, userId) => async dispatch => {
   dispatch(getFollow());
 };
 
-
-export const getFollow = () => async dispatch => {
-  const response = await csrfFetch(`/api/follow`);
-
-  if (response.ok) {
-    const list = await response.json();
-    dispatch(load(list));
-  }
-};
-
-// Delete follow not working but route works
-
 export const deleteFollow = id => async dispatch => {
   await csrfFetch(`/api/follow`, {
     method: 'delete',
@@ -44,6 +30,17 @@ export const deleteFollow = id => async dispatch => {
   });
   dispatch(getFollow());
 };
+
+export const getFollow = () => async dispatch => {
+  const response = await csrfFetch(`/api/follow`);
+  console.log(response);
+  if (response.ok) {
+    const list = await response.json();
+    dispatch(load(list));
+  }
+};
+
+
 
 const initialState = [];
 

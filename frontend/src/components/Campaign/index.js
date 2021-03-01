@@ -1,39 +1,49 @@
-import React, { useEffect } from 'react';
-import { useHistory } from 'react-router-dom'
-import { useDispatch, useSelector } from "react-redux";
+// import React, { useEffect, useState } from 'react';
+// import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from 'react-router-dom';
 import ReactPlayer from "react-player";
-import { getFollow, createFollow } from '../../store/follow';
+// import { getFollow, createFollow, deleteFollow } from '../../store/follow'; 
+// import { getCampaign } from '../../store/campaign';
 import './Campaign.css';
 
 const Campaign = ({data}) => {
-  const history = useHistory()
   // const dispatch = useDispatch();
-  // const userId = useSelector(state => state.session.user.id)
+  const history = useHistory();
+  // const [ campaignId, SetCampaignId ] = useState(0)
+  // // const campaign = useSelector(state => state.campaign);
+  // const user = useSelector(state => state.session.user);
+  // const userId =user?.id;
   // const follows = useSelector(state => state.follow);
-  // console.log(follows);
-  // const following = follows.filter((el) => {
-  //   return userId === el.userId
+  // const following = follows?.filter((el) => {
+  //   return user?.id === el.userId
   // })
 
-  // const followed = following.filter((el) => {
-  //     return follows.filter((follow) => {
-  //         return follow.campaignId === el.campaignId
-  //     })
+  // const followed = following?.find((el) => {
+  //   return campaignId === el.campaignId
   // })
-  // console.log(followed);
+
+  // useEffect(() => {
+  //   dispatch(getCampaign());
+  //   dispatch(getFollow());
+    
+  // }, [dispatch]);
 
   const onClick = () => {
         const to = `/campaign/${data?.id}`;
         history.push(to)
     };
-  const campaignId = data?.id;  
+  // const campaignId = data?.id;  
 
   // const onFollow = () => {
+  //   SetCampaignId(data?.id)
   //   dispatch(createFollow(campaignId, userId))
   // }  
-  // useEffect(() => {
-  //     dispatch(getFollow());
-  // }, [dispatch])
+
+  // const offFollow = () => {
+  //   SetCampaignId(data?.id)
+  //   const follow = following?.find((el) => el.userId === userId && el.campaignId === campaignId)
+  //   dispatch(deleteFollow(follow?.id));
+  // }
 
   return (
     <div>
@@ -51,7 +61,7 @@ const Campaign = ({data}) => {
         </div>
         <div className='text-spacer'></div>
         <div className='follow-btn'>
-          {/* <button onClick={onFollow}>{followed !== undefined ? 'UnFollow' : 'Follow'}</button> */}
+          {/* {followed !== undefined ? <button onClick={offFollow}>Unfollow</button> : <button onClick={onFollow}>Follow</button>} */}
         </div>
         <div className='title campaign-div_inner' onClick={onClick}>{data?.title}</div>
         <div className='text-spacer' onClick={onClick}></div>
