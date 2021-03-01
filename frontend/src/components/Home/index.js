@@ -29,11 +29,11 @@ const CampaignBrowser = () => {
         reloadOnUpdate={true} // default false
         static={false}// default false
       >
-        <div className='gallery-cell'></div>
-        <div className='gallery-cell'></div>
-        <div className='gallery-cell'></div>
-        <div className='gallery-cell'></div>
-        <div className='gallery-cell'></div>
+        <div className='gallery-cell gallery-cell1'></div>
+        <div className='gallery-cell gallery-cell2'></div>
+        <div className='gallery-cell gallery-cell3'></div>
+        <div className='gallery-cell gallery-cell4'></div>
+        <div className='gallery-cell gallery-cell5'></div>
       </Flickity>
       <div className='spacer1'> Campaigns: </div>
       <div className='campaigns-div'>

@@ -15,7 +15,7 @@ body { font-family: sans-serif; }
   background: transparent;
 }
 
-.gallery-cell {
+.gallery-cell1 {
   width: 66%;
   height: 200px;
   margin-right: 10px;
@@ -23,6 +23,28 @@ body { font-family: sans-serif; }
   border-radius: 5px;
   counter-increment: gallery-cell;
   background-image: url("./homePage.png");
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.gallery-cell2 {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background-color: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  background-image: url("./homePage1.png");
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.gallery-cell3 {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background-color: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  background-image: url("./homePage2.png");
   background-repeat: no-repeat;
   height: 500px;
 }
