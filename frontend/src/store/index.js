@@ -5,6 +5,7 @@ import sessionReducer from './session';
 import campaignReducer from './campaign';
 import categoryReducer from './category';
 import locationReducer from './location';
+import followReducer from './follow';
 
 
 const rootReducer = combineReducers({
@@ -12,6 +13,7 @@ const rootReducer = combineReducers({
   campaign: campaignReducer,
   category: categoryReducer,
   location: locationReducer,
+  follow: followReducer,
 });
 
 

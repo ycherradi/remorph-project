@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import ProfileButton from './ProfileButton';
 import PostButton from './PostButton';
 import LoginFormModal from '../LoginFormModal';
 import SignupFormModal from '../SignupFormModal';
 import DemoLogin from '../DemoLogin';
 import './Navigation.css';
+import {getCategory} from '../../store/category';
 
 function Navigation({ isLoaded }){
+  const dispatch = useDispatch();
   const sessionUser = useSelector(state => state.session.user);
   const categories = useSelector(state => state.category);
   let sessionLinks;
@@ -28,6 +30,10 @@ function Navigation({ isLoaded }){
       </>
     );
   }
+
+  useEffect(() => {
+    dispatch(getCategory());
+  }, [dispatch])
 
   return (
     <nav className="navbar">

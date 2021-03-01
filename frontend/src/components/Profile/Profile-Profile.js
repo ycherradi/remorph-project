@@ -1,6 +1,5 @@
-import { useCallback, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import Profile from './index';
 import './Profile-Profile.css';
 import { getCampaign } from '../../store/campaign';
 
@@ -24,6 +23,9 @@ const ProfileProfile = () => {
       <div className='profileProfile-div'>
         <div>
           <div className='profile-image1'>Profile Image</div>
+          <form action="">
+            <input type="file" id="myFile" name="filename" />
+          </form>
         </div>
         <div>
           <div>

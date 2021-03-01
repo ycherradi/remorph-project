@@ -47,6 +47,12 @@ body { font-family: sans-serif; }
 
 .spacer1 {
   height: 100px;
+  text-align: start;
+  padding-left: 100px;
+  padding-top: 100px;
+  padding-bottom: 15px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .spacer2 {

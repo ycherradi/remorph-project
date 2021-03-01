@@ -36,7 +36,6 @@ export const createCampaign = data => async dispatch => {
 // };
 
 export const getCampaign = () => async dispatch => {
-  console.log('getCampaign')
   const response = await csrfFetch(`/api/home`);
 
   if (response.ok) {

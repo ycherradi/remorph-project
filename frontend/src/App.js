@@ -9,6 +9,7 @@ import PostCampaign from "./components/PostCampaign";
 import Footer from './components/Footer';
 import Profile from './components/Profile';
 import ProfileProfile from './components/Profile/Profile-Profile';
+import ProfileCampaign from './components/Profile/Profile-Campaigns';
 
 function App() {
   const dispatch = useDispatch();
@@ -37,6 +38,7 @@ function App() {
           </Route>
           <Route path='/profile/campaign' >
             <Profile />
+            <ProfileCampaign />
           </Route>
           <Route path='/profile/contribution' >
             <Profile />

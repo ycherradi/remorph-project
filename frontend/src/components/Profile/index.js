@@ -18,7 +18,7 @@ const Profile = () => {
       <div className='profile-navbar'>
         <div className='profile-navbar_links'>
           <div className='profile-navbar_link'>
-            <NavLink to='/profile'>Profile</NavLink>
+            <NavLink to='/profile' autofocus>Profile</NavLink>
           </div>
           <div className='profile-navbar_link'>
             <NavLink to='/profile/campaign'>Campaigns</NavLink>

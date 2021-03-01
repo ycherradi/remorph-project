@@ -30,7 +30,8 @@ router.post('/', asyncHandler(async(req, res) => {
       locationId, 
       goal_amount, 
       amount_generated, 
-      duration, userId } = req.body;
+      duration,
+      userId } = req.body;
 
       const campaign = await Campaign.create({
         title, 

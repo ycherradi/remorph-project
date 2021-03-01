@@ -35,7 +35,7 @@ const CampaignBrowser = () => {
         <div className='gallery-cell'></div>
         <div className='gallery-cell'></div>
       </Flickity>
-      <div className='spacer1'></div>
+      <div className='spacer1'> Campaigns: </div>
       <div className='campaigns-div'>
         <div className='campaign'>
           {Object.values(campaigns).map((campaign) => {

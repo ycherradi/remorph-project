@@ -1,0 +1,51 @@
+.profile-campaign {
+  display: flex;
+}
+
+.profile-campaign_player {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
+  max-width: 300px;
+  margin-left: 100px;
+}
+
+.player-wrapper1 {
+  position: relative;
+  padding-top: 56.25% 
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: none;
+}
+
+.campaign-profile_title {
+  margin-left: 30px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.campaign-profile_title:visited {
+  text-decoration: none;
+  color: green;
+}
+
+.campaign-profile_id {
+  margin-left: 30px;
+
+}
+
+.campaign-im-on, .campaign-following {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: solid 1px;
+}
